@@ -14,7 +14,7 @@ alias lsd='ls -l | grep "^d"'
 alias undopush="git push -f origin HEAD^:master"
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
@@ -40,6 +40,9 @@ alias m="mate ."
 
 # File size
 alias fs="stat -f \"%z bytes\""
+
+#connect to dev box. tmux ftw.
+alias dev="ssh -t dev \"tmux -2 -L macbook attach || tmux -2 -CC -L macbook\""
 
 # ROT13-encode text. Works for decoding, too! ;)
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
