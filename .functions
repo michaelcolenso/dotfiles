@@ -13,3 +13,8 @@ httpcompression() {
 digga() {
   dig +nocmd "$1" any +multiline +noall +answer
 }
+
+# git vimdiff hacky thing
+function git_diff() {
+  git diff --no-ext-diff -w "$@" | vim -R -
+}

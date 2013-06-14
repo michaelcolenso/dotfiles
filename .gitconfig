@@ -33,3 +33,8 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
+[github]
+	user = Michael Colenso
+	token = 702fc72cc80a274e83f62f4b41c1ee16b68d9f2f
+[diff]
+  external = git_diff_wrapper
