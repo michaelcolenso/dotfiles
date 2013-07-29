@@ -42,7 +42,7 @@ alias be="bundle exec"
 alias fs="stat -f \"%z bytes\""
 
 #connect to dev box. tmux ftw.
-alias dev="ssh -t dev \"tmux -2 -L macbook attach || tmux -2 -CC -L macbook\""
+alias dev='ssh -t dev \"tmux -2 -L macbook attach || tmux -2 -CC -L macbook\"'
 
 # ROT13-encode text. Works for decoding, too! ;)
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
@@ -68,8 +68,3 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do alias "$method"="lwp-request -m '$method'"; done
-
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 10'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
